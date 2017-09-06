@@ -99,7 +99,7 @@ public class AdminBizImpl implements AdminBiz {
         log.setHandleCode(handleCallbackParam.getExecuteResult().getCode());
         log.setHandleMsg(handleMsg.toString());
         xxlJobLogDao.updateHandleInfo(log);
-
+        // 推送
         return ReturnT.SUCCESS;
     }
 
